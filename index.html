@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gender Equity</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+</head>
+<body>
+<!-- head -->
+<div class="container-fluid">
+    <div class="row bgimgup">
+        <div class="col-md-2">
+            <img src="img/logo.PNG" class="img-responsive">
+        </div>
+        <div class="col-md-7">
+            <h1 id="title2"><big><strong>He for she,</strong></big></h1>
+            <h2 id="title3"><big><big><big><strong>We for  </strong></big></big></big></h2>
+        </div>
+        <div class="col-md-3">
+            <img src="img/background.png" alt="this is a big picture" class="img-responsive" id="banner">
+        </div>
+    </div>
+</div>
+<!-- head over -->
+<!-- navigator -->
+<div id="btbar" class="text-center container-fluid">
+        <div class="row">
+            <!-- HTML for SEARCH BAR -->
+            <a href="index.html"><div class="buttons" style="width:12%"><big>Home</big></div></a>
+            <a href="facts.html"><div class="buttons" style="width:12%"><big>Facts</big></div></a>
+            <a href="biases.html"><div class="buttons" style="width:12%"><big>Biases</big></div></a>
+            <a href="stem.html"><div class="buttons" style="width:12%"><big>STEM</big></div></a>
+            <a href="contact_us.html"><div class="buttons" style="width:12%"><big>Contact Info</big></div></a>
+            <a href="maps.html"><div class="buttons" style="width:12%"><big>E-Map</big></div></a>
+                        <!-- HTML for SEARCH BAR -->
+            <form class="myform" action="https://www.google.ca/search?" method="get">
+                    <div class="myformcont">
+                        <input name="q" value="                                                                                      site:weforshe.ga" type="text" placeholder="Go for it" required style="width:60%">
+                        <button class="btncol" type="submit" value="Search" style="width:30%">Search</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+<!-- navigator ends -->
+<!-- content starts -->
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/heijiejie.jpeg" style="width:100%">
+    <div class="text" style="color: white">
+    <p><big><strong>Does gendered racism exist?<br>
+                      Where can we find them?<br>
+                      To know more inftomation,<br>
+                      <a href="http://www.4399.com">Click here</a></strong></big></p>
+    </div>
+  </div>
+
+  <div class="mySlides fade" id="superman">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/superman.jpeg" style="width:100%">
+    <div class="text">
+    <p><big><strong> Women are not women.<br>
+                          Believe or not.<br>
+                          To explore women power<br>
+                         <a href="http://www.uwaterloo.ca">Click here</a></strong></big></p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/ourlogo.png" style="width:100%">
+    <div class="text"><p><big><strong>Are women important in workplace?<br>
+                      What is the world reaction?<br>
+                      To  know that the world is doing,<br>
+                      <a href="http://www.youtube.com">Click here</a></strong></big></p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/map.png" style="width:100%">
+    <div class="text"><p><big><strong>Do you need any help from associations?<br>
+                      Or do you want to contribute to association<br>
+                      To find women association around you,<br>
+                      <a href="www.facebook.com">Click here</a></strong></big></p>
+    </div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!-- content ends -->
+<!-- footer starts -->
+<hr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" id="footer">
+            Designed by Tong Linzhe, Yao Yuwei, Guo Haowei, Wang Zihao.
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var slideIndex = 1;
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+    window.onload = function () {
+        showSlides(slideIndex);
+    };
+</script>
+<!-- footer ends -->
+</body>
+</html>
